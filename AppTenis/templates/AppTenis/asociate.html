@@ -1,0 +1,19 @@
+
+{% load static %}
+
+
+
+<h1 class="mb-5">SPORT CLUB MAGDALENA</h1>
+<h1 class="mb-5">socios TENIS - Asociarse</h1>
+
+
+
+<form action="{% url 'asociate' %}" method="POST"> {% csrf_token %}
+   
+<table>
+    {{ formulario.as_table }}
+</table>
+    <input type="submit" value="enviar">
+</form>
+
+    
